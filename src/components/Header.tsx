@@ -35,6 +35,13 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       path: '/ads-services',
       icon: Target,
       color: 'from-blue-500 to-purple-600'
+    },
+    {
+      title: 'Social Media Management',
+      description: 'Build your brand and engage your audience',
+      path: '/social-media-services',
+      icon: Users,
+      color: 'from-pink-500 to-purple-600'
     }
   ];
 
@@ -45,7 +52,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
   };
 
   const isServicesActive = () => {
-    return location.pathname === '/seo-services' || location.pathname === '/ads-services';
+    return location.pathname === '/seo-services' || location.pathname === '/ads-services' || location.pathname === '/social-media-services';
   };
 
   const handleNavigation = (path: string) => {

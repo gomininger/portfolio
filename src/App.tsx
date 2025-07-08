@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import SEOServices from './components/SEOServices';
 import AdsServices from './components/AdsServices';
+import SocialMediaServices from './components/SocialMediaServices';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/seo-services" element={<SEOServices />} />
           <Route path="/ads-services" element={<AdsServices />} />
+          <Route path="/social-media-services" element={<SocialMediaServices />} />
         </Routes>
       </Layout>
     </Router>
