@@ -35,34 +35,6 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       path: '/ads-services',
       icon: Target,
       color: 'from-blue-500 to-purple-600'
-    },
-    {
-      title: 'Website Development',
-      description: 'Custom websites with modern design',
-      path: '/contact',
-      icon: Globe,
-      color: 'from-purple-500 to-pink-600'
-    },
-    {
-      title: 'Social Media Management',
-      description: 'Complete social media strategy and management',
-      path: '/contact',
-      icon: Users,
-      color: 'from-pink-500 to-red-600'
-    },
-    {
-      title: 'Analytics & Reporting',
-      description: 'Data-driven insights and performance tracking',
-      path: '/contact',
-      icon: BarChart3,
-      color: 'from-orange-500 to-yellow-600'
-    },
-    {
-      title: 'Digital Strategy',
-      description: 'Comprehensive digital marketing strategies',
-      path: '/contact',
-      icon: Zap,
-      color: 'from-cyan-500 to-blue-600'
     }
   ];
 
@@ -172,7 +144,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 10, scale: 0.95 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full right-0 mt-2 w-96 bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden z-50"
+                    className="absolute top-full right-0 mt-2 w-80 bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden z-50"
                   >
                     <div className="p-4">
                       <div className="grid gap-3">
@@ -290,7 +262,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
                   Services
                 </h3>
                 <div className="space-y-1">
-                  {services.slice(0, 4).map((service, index) => (
+                  {services.map((service, index) => (
                     <motion.button
                       key={service.path}
                       initial={{ opacity: 0, x: 20 }}
