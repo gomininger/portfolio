@@ -63,6 +63,7 @@ const Footer: React.FC = () => {
                   { label: 'Portfolio', href: '/portfolio' },
                   { label: 'Website Services', href: '/website-services' },
                   { label: 'SEO Services', href: '/seo-services' },
+                  { label: 'SEO Marketplace', href: '/seo-marketplace-services' },
                   { label: 'Ads Services', href: '/ads-services' },
                   { label: 'Social Media', href: '/social-media-services' },
                   { label: 'Digital Agency', href: '/digital-marketing-agency' },

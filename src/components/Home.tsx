@@ -105,7 +105,7 @@ const Home: React.FC = () => {
                 description: 'Specialized SEO for e-commerce and marketplace platforms',
                 image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=400',
                 features: ['Product Optimization', 'Category SEO', 'Conversion Focus'],
-                path: '/seo-services'
+                path: '/seo-marketplace-services'
               },
               {
                 title: 'Jasa Iklan Ads',

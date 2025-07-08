@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Search, Target, Globe, Users, BarChart3, Zap } from 'lucide-react';
+import { Menu, X, ChevronDown, Search, Target, Globe, Users, BarChart3, Zap, ShoppingCart } from 'lucide-react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
@@ -35,6 +35,13 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       path: '/website-services',
       icon: Globe,
       color: 'from-blue-500 to-purple-600'
+    },
+    {
+      title: 'SEO Marketplace',
+      description: 'Dominate Amazon, eBay, Etsy & more marketplaces',
+      path: '/seo-marketplace-services',
+      icon: ShoppingCart,
+      color: 'from-orange-500 to-purple-600'
     },
     {
       title: 'Ads Management',

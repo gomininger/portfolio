@@ -11,6 +11,7 @@ import AdsServices from './components/AdsServices';
 import SocialMediaServices from './components/SocialMediaServices';
 import DigitalMarketingAgency from './components/DigitalMarketingAgency';
 import WebsiteServices from './components/WebsiteServices';
+import SEOMarketplaceServices from './components/SEOMarketplaceServices';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/social-media-services" element={<SocialMediaServices />} />
           <Route path="/digital-marketing-agency" element={<DigitalMarketingAgency />} />
           <Route path="/website-services" element={<WebsiteServices />} />
+          <Route path="/seo-marketplace-services" element={<SEOMarketplaceServices />} />
         </Routes>
       </Layout>
     </Router>
