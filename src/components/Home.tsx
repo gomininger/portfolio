@@ -90,37 +90,43 @@ const Home: React.FC = () => {
                 title: 'Jasa Pembuatan Website',
                 description: 'Custom website development with modern design and responsive layout',
                 image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=400',
-                features: ['Responsive Design', 'SEO Optimized', 'Fast Loading']
+                features: ['Responsive Design', 'SEO Optimized', 'Fast Loading'],
+                path: '/website-services'
               },
               {
                 title: 'Jasa SEO Profesional',
                 description: 'Professional SEO services to improve your search engine rankings',
                 image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400',
-                features: ['Keyword Research', 'On-Page SEO', 'Technical SEO']
+                features: ['Keyword Research', 'On-Page SEO', 'Technical SEO'],
+                path: '/seo-services'
               },
               {
                 title: 'Jasa SEO Marketplace',
                 description: 'Specialized SEO for e-commerce and marketplace platforms',
                 image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=400',
-                features: ['Product Optimization', 'Category SEO', 'Conversion Focus']
+                features: ['Product Optimization', 'Category SEO', 'Conversion Focus'],
+                path: '/seo-services'
               },
               {
                 title: 'Jasa Iklan Ads',
                 description: 'Strategic advertising campaigns across multiple platforms',
                 image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=400',
-                features: ['Google Ads', 'Facebook Ads', 'Campaign Management']
+                features: ['Google Ads', 'Facebook Ads', 'Campaign Management'],
+                path: '/ads-services'
               },
               {
                 title: 'Jasa Sosial Media Management',
                 description: 'Complete social media management and content strategy',
                 image: 'https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?auto=compress&cs=tinysrgb&w=400',
-                features: ['Content Creation', 'Community Management', 'Analytics']
+                features: ['Content Creation', 'Community Management', 'Analytics'],
+                path: '/social-media-services'
               },
               {
                 title: 'Digital Marketing Agency',
                 description: 'Full-service digital marketing solutions for your business',
                 image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=400',
-                features: ['Strategy Planning', 'Multi-Channel Marketing', 'ROI Tracking']
+                features: ['Strategy Planning', 'Multi-Channel Marketing', 'ROI Tracking'],
+                path: '/digital-marketing-agency'
               }
             ].map((service, index) => (
               <motion.div
@@ -157,10 +163,10 @@ const Home: React.FC = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => navigate('/contact')}
+                    onClick={() => navigate(service.path)}
                     className="w-full mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors text-sm lg:px-6 lg:py-3 lg:text-base"
                   >
-                    Get Quote
+                    Learn More
                   </motion.button>
                 </div>
               </motion.div>

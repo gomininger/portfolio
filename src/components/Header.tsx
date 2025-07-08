@@ -30,6 +30,13 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       color: 'from-green-500 to-blue-600'
     },
     {
+      title: 'Website Creation',
+      description: 'Professional websites that drive results',
+      path: '/website-services',
+      icon: Globe,
+      color: 'from-blue-500 to-purple-600'
+    },
+    {
       title: 'Ads Management',
       description: 'Professional advertising campaigns that deliver ROI',
       path: '/ads-services',
