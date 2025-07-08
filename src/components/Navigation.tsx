@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Briefcase, User, Mail } from 'lucide-react';
+import { Home, Briefcase, User, Mail, Search } from 'lucide-react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -10,6 +10,7 @@ const Navigation: React.FC = () => {
   const navItems = [
     { icon: Home, label: 'Home', path: '/' },
     { icon: Briefcase, label: 'Work', path: '/portfolio' },
+    { icon: Search, label: 'SEO', path: '/seo-services' },
     { icon: User, label: 'About', path: '/about' },
     { icon: Mail, label: 'Contact', path: '/contact' }
   ];
