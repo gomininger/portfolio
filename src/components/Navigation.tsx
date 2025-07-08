@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Briefcase, User, Mail, Search, Target } from 'lucide-react';
+import { Home, Briefcase, User, Mail, Settings } from 'lucide-react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -10,14 +10,14 @@ const Navigation: React.FC = () => {
   const navItems = [
     { icon: Home, label: 'Home', path: '/' },
     { icon: Briefcase, label: 'Work', path: '/portfolio' },
-    { icon: Search, label: 'SEO', path: '/seo-services' },
-    { icon: Target, label: 'Ads', path: '/ads-services' },
+    { icon: Settings, label: 'Services', path: '/seo-services' },
     { icon: User, label: 'About', path: '/about' },
     { icon: Mail, label: 'Contact', path: '/contact' }
   ];
 
   const isActive = (path: string) => {
     if (path === '/' && location.pathname === '/') return true;
+    if (path === '/seo-services' && (location.pathname === '/seo-services' || location.pathname === '/ads-services')) return true;
     if (path !== '/' && location.pathname.startsWith(path)) return true;
     return false;
   };
