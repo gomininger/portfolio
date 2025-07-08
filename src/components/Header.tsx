@@ -42,6 +42,13 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
       path: '/social-media-services',
       icon: Users,
       color: 'from-pink-500 to-purple-600'
+    },
+    {
+      title: 'Digital Marketing Agency',
+      description: 'Full-service digital marketing solutions',
+      path: '/digital-marketing-agency',
+      icon: BarChart3,
+      color: 'from-blue-500 to-purple-600'
     }
   ];
 

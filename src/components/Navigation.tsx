@@ -17,7 +17,7 @@ const Navigation: React.FC = () => {
 
   const isActive = (path: string) => {
     if (path === '/' && location.pathname === '/') return true;
-    if (path === '/seo-services' && (location.pathname === '/seo-services' || location.pathname === '/ads-services' || location.pathname === '/social-media-services')) return true;
+    if (path === '/seo-services' && (location.pathname === '/seo-services' || location.pathname === '/ads-services' || location.pathname === '/social-media-services' || location.pathname === '/digital-marketing-agency')) return true;
     if (path !== '/' && location.pathname.startsWith(path)) return true;
     return false;
   };

@@ -64,6 +64,7 @@ const Footer: React.FC = () => {
                   { label: 'SEO Services', href: '/seo-services' },
                   { label: 'Ads Services', href: '/ads-services' },
                   { label: 'Social Media', href: '/social-media-services' },
+                  { label: 'Digital Agency', href: '/digital-marketing-agency' },
                   { label: 'About', href: '/about' },
                   { label: 'Contact', href: '/contact' }
                 ].map((link) => (
