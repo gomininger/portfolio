@@ -16,6 +16,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
     { label: 'Home', path: '/' },
     { label: 'Work', path: '/portfolio' },
     { label: 'SEO Services', path: '/seo-services' },
+    { label: 'Ads Services', path: '/ads-services' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' }
   ];
