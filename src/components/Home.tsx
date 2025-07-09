@@ -1,1 +1,12 @@
-{"code":"rate-limited","message":"You have hit the rate limit. Please upgrade to keep chatting.","providerLimitHit":false,"isRetryable":true}
+import React from 'react';
+
+const Home: React.FC = () => {
+  return (
+    <div>
+      <h1>Welcome to My Portfolio!</h1>
+      <p>This is the home page.</p>
+    </div>
+  );
+};
+
+export default Home;
