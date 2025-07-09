@@ -232,14 +232,14 @@ const Home: React.FC = () => {
                       <span className="text-white">=</span>
                       <span className="text-blue-400">await</span>
                       <span className="text-yellow-400">createWebsite</span>
-                      <span className="text-white">({</span>
+                      <span className="text-white">{"({"}</span>
                     </div>
                     <div className="pl-4 space-y-1">
                       <div><span className="text-red-400">design</span><span className="text-white">:</span> <span className="text-green-400">'modern'</span><span className="text-white">,</span></div>
                       <div><span className="text-red-400">seo</span><span className="text-white">:</span> <span className="text-green-400">'optimized'</span><span className="text-white">,</span></div>
                       <div><span className="text-red-400">performance</span><span className="text-white">:</span> <span className="text-green-400">'lightning-fast'</span></div>
                     </div>
-                    <div className="text-white">})</div>
+                    <div className="text-white">{"})"}</div>
                   </div>
                 </div>
 
