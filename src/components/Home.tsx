@@ -253,9 +253,9 @@ const Home: React.FC = () => {
                     <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                   </div>
                   <div className="space-y-1 text-xs">
-                    <div className="text-cyan-400">const success = () => {"{"}</div>
+                    <div className="text-cyan-400">const success = () =&gt; &#123;</div>
                     <div className="text-white pl-2">return innovation;</div>
-                    <div className="text-cyan-400">{"}"}</div>
+                    <div className="text-cyan-400">&#125;</div>
                   </div>
                 </motion.div>
 
